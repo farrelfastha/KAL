@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>slamat datang di mata kuliah komputasi aljabar linier &#8212; My sample book</title>
+    <title>SISTEM PERSAMAAN LINIER &#8212; My sample book</title>
   
   
   
@@ -62,10 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PERSAMAAN LINIER';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINIER" href="PERSAMAAN%20LINIER.html" />
+    <link rel="prev" title="slamat datang di mata kuliah komputasi aljabar linier" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +117,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +136,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,14 +163,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     slamat datang di mata kuliah komputasi aljabar linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="PERSAMAAN%20LINIER.html">SISTEM PERSAMAAN LINIER</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SISTEM PERSAMAAN LINIER</a></li>
 </ul>
 
     </div>
@@ -249,7 +247,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPERSAMAAN LINIER.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +277,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/PERSAMAAN LINIER.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -342,7 +340,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -353,11 +353,25 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>slamat datang di mata kuliah komputasi aljabar linier</h1>
+    <h1>SISTEM PERSAMAAN LINIER</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#devinisi-sistem-persamaan-linier">Devinisi sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi persamaan linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi grafik</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -367,11 +381,64 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="slamat-datang-di-mata-kuliah-komputasi-aljabar-linier">
-<h1>slamat datang di mata kuliah komputasi aljabar linier<a class="headerlink" href="#slamat-datang-di-mata-kuliah-komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<p>berikut adalah catatan materi dari mata kuliah komputasi aljabar linier muhammad farrel fastha (240411100114)</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
+<h1>SISTEM PERSAMAAN LINIER<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<section id="devinisi-sistem-persamaan-linier">
+<h2>Devinisi sistem persamaan linier<a class="headerlink" href="#devinisi-sistem-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama. Persamaan linier sendiri adalah persamaan yang setiap variabelnya berpangkat satu dan tidak mengandung perkalian antar variabel. Bentuk umum sistem persamaan linier dengan dua variabel adalah:
+<img alt="image" src="https://hackmd.io/_uploads/BJ6NRYgqyl.png" />
+Dimana <em>a,b,c,d,e,f,g</em> adalah konstanta dan <em>x,y</em>  adalah variabel yang harus dicari.</p>
+</section>
+<section id="solusi-persamaan-linier">
+<h2>Solusi persamaan linier<a class="headerlink" href="#solusi-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Solusi dari sistem persamaan linier adalah nilai variabel yang memenuhi semua persamaan dalam sistem tersebut. Berikut adalah beberapa metode untuk menyelesaikan sistem persamaan linier:</p>
+<section id="eliminasi">
+<h3>Eliminasi<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi digunakan dengan menghilangkan salah satu variabel dengan cara menjumlahkan atau mengurangkan dua persamaan. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Menyamakan koefisien salah satu variabel dalam kedua persamaan.</p></li>
+<li><p>Menjumlahkan atau mengurangkan kedua persamaan untuk mengeliminasi satu variabel.</p></li>
+<li><p>Menyelesaikan persamaan satu variabel yang tersisa.</p></li>
+<li><p>Menggunakan nilai yang diperoleh untuk mencari variabel lainnya.</p></li>
+</ol>
+<p>Contoh:
+<img alt="image" src="https://hackmd.io/_uploads/HJVIg9g9Jl.png" />
+Menjumlahkan kedua persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/SkJqlqgq1e.png" /></p>
+</section>
+<section id="eliminasi-gauss">
+<h3>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi Gauss adalah teknik yang lebih sistematis untuk menyelesaikan sistem persamaan linier dengan cara mengubahnya menjadi bentuk eselon baris. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Menulis sistem persamaan dalam bentuk matriks augmented.</p></li>
+<li><p>Melakukan operasi baris elementer untuk mendapatkan bentuk eselon baris.</p></li>
+<li><p>Menyelesaikan persamaan dari baris terakhir ke atas dengan metode substitusi balik.</p></li>
+</ol>
+<p>Contoh: Sistem persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/rkkWW9lcyl.png" />
+Dalam bentuk matriks augmented:
+<img alt="image" src="https://hackmd.io/_uploads/HkGz-9ec1x.png" />
+Melakukan operasi baris:
+<img alt="image" src="https://hackmd.io/_uploads/S114-qx5ye.png" />
+Hasil:
+<img alt="image" src="https://hackmd.io/_uploads/rJrr-ce5kx.png" />
+Substitusi balik menghasilkan <span class="math notranslate nohighlight">\(x=2\)</span>,<span class="math notranslate nohighlight">\(y=1\)</span>.</p>
+</section>
+<section id="solusi-grafik">
+<h3>Solusi grafik<a class="headerlink" href="#solusi-grafik" title="Link to this heading">#</a></h3>
+<p>Metode solusi grafik dilakukan dengan menggambar setiap persamaan dalam sistem sebagai garis pada bidang koordinat. Titik potong dari garis-garis tersebut adalah solusi dari sistem persamaan linier. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Mengubah setiap persamaan ke bentuk eksplisit <span class="math notranslate nohighlight">\(y=mx+b\)</span>.</p></li>
+<li><p>Menggambar garis untuk setiap persamaan pada bidang koordinat.</p></li>
+<li><p>Menentukan titik potong antar garis sebagai solusi dari sistem.</p></li>
+</ol>
+<p>Contoh: Sistem persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/r1qJM9l5ye.png" />
+Dengan menggambar kedua garis pada bidang koordinat, titik potongnya adalah <span class="math notranslate nohighlight">\(x=1\)</span>,<span class="math notranslate nohighlight">\(y=3\)</span>,yang merupakan solusi sistem ini.
+Metode grafik lebih cocok digunakan untuk sistem persamaan linier sederhana dengan dua variabel karena keterbatasan visualisasi untuk lebih dari dua variabel.</p>
+<iframe src="https://www.geogebra.org/calculator/skqazxcv?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -404,14 +471,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="PERSAMAAN%20LINIER.html"
-       title="next page">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SISTEM PERSAMAAN LINIER</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">slamat datang di mata kuliah komputasi aljabar linier</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -419,6 +486,28 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#devinisi-sistem-persamaan-linier">Devinisi sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi persamaan linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi grafik</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
