@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'operasi aritmatika matriks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'operasi_aritmatika_matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="penyelesaian sistem persamaan linier" href="penyelesaian%20sistem%20persamaan%20linier.html" />
@@ -249,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Foperasi aritmatika matriks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Foperasi_aritmatika_matriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +279,7 @@
       
       
       
-      <li><a href="_sources/operasi aritmatika matriks.ipynb" target="_blank"
+      <li><a href="_sources/operasi_aritmatika_matriks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -719,6 +719,91 @@ None
 </div>
 </div>
 </div>
+<p>#sistem persamaan liear dengan menggunakan invers menggunakan obe (operasi baris elementer)
+-7x1 - 6x2 - 12x3 = -33</p>
+<p>5x1 + 5x2 + 7x3 = 24</p>
+<p>x1 + 4x3 = 5</p>
+<p>A =
+\begin{bmatrix}
+-7 &amp; -6 &amp; -12 \
+5 &amp; 5 &amp; 7 \
+1 &amp; 0 &amp; 4
+\end{bmatrix}</p>
+<p>x = \begin{bmatrix}
+x_1\
+x_2 \
+x_3
+\end{bmatrix}</p>
+<p>b =
+\begin{bmatrix}
+-33 \
+24 \
+5
+\end{bmatrix}</p>
+<p>Pertama Gabungkan matriks (A) dengan matriks identitas (I) untuk membentuk matriks augmented ( [ A | I ] ):</p>
+<p>[A|I] =
+\begin{bmatrix}
+-7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<p>Pakai OBE agar bagian kanan menjadi (A^-1).</p>
+<p>Lalu kita ubah elemen (1,1) menjadi 1, yaitu dengan membagi baris pertama dengan  (-7):</p>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; \Big| -\frac{1}{7} &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; \Big| 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; \Big| 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<p>Lalu Buat Elemen Kolom Pertama (2,1) dan (3,1) Menjadi 0.</p>
+<ul class="simple">
+<li><p>Baris kedua: <span class="math notranslate nohighlight">\(( R_2 \to R_2 - 5R_1 )\)</span></p></li>
+<li><p>Baris ketiga: <span class="math notranslate nohighlight">\(( R_3 \to R_3 - R_1 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; \Big| -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; -\frac{7}{7} &amp; \frac{1}{7} &amp; \Big| 1 &amp; 1 &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \Big| 1 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<p>Ubah Elemen (2,2) Menjadi 1 dengan membagi baris kedua dengan <span class="math notranslate nohighlight">\((\frac{5}{7} )\)</span>:</p>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; \Big| -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; \frac{7}{5} &amp; \Big| 0 &amp; 1 &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \Big| 1 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<p>Setelah Itu Buat Elemen Kolom Kedua (1,2) dan (3,2) Menjadi 0</p>
+<ul class="simple">
+<li><p>Baris pertama: <span class="math notranslate nohighlight">\(( R_1 \to R_1 - \frac{6}{7} R_2 )\)</span></p></li>
+<li><p>Baris ketiga: <span class="math notranslate nohighlight">\(( R_3 \to R_3 + \frac{6}{7} R_2 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; -\frac{13}{35} &amp; \Big| -\frac{42}{35} &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; -\frac{1}{5} &amp; \Big| 1 &amp; 7/5 &amp; 0 \
+0 &amp; 0 &amp; \frac{22}{35} &amp; \Big| \frac{13}{35} &amp; \frac{42}{35} &amp; 1
+\end{bmatrix}</p>
+<p>Ubah Elemen (3,3) Menjadi 1 dengan membagi baris ketiga dengan  <span class="math notranslate nohighlight">\(\left(\frac{22}{35}\right)\)</span>:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; -\frac{13}{35} &amp; \Big| -\frac{42}{35} &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; -\frac{1}{5} &amp; \Big| 1 &amp; 7/5 &amp; 0 \
+0 &amp; 0 &amp; 1 &amp; \Big| \frac{13}{22} &amp; \frac{42}{35} &amp; \frac{35}{22}
+\end{bmatrix}</p>
+<p>Buat Elemen Kolom Ketiga (1,3) dan (2,3) Menjadi 0</p>
+<ul class="simple">
+<li><p>Baris pertama: <span class="math notranslate nohighlight">\(( R_1 \to R_1 - \frac{18}{35} R_3 )\)</span></p></li>
+<li><p>Baris kedua: <span class="math notranslate nohighlight">\(( R_2 \to R_2 + \frac{1}{5} R_3 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; \Big| -3 &amp; 5 &amp; 2 \
+0 &amp; 1 &amp; 0 &amp; \Big| 2 &amp; 1 &amp; 1 \
+0 &amp; 0 &amp; 1 &amp; \Big| \frac{13}{22} &amp; \frac{21}{11} &amp; \frac{35}{22}
+\end{bmatrix}</p>
+<p>Bagian kanan dari matriks ini adalah<span class="math notranslate nohighlight">\( (A^{-1})\)</span>.</p>
+<p>Langkah 8: Hitung <span class="math notranslate nohighlight">\((x = A^{-1}b)\)</span> dengan mengalikan  <span class="math notranslate nohighlight">\((A^{-1})\)</span> dengan  <span class="math notranslate nohighlight">\((b)\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x = A^{-1}b = \begin{bmatrix} -3 &amp; 5 &amp; 2 \end{bmatrix}\)</span></p>
+<p>sehingga diperoleh
+<span class="math notranslate nohighlight">\(x_1 = -3, x_2 = 5, x_3 = 2\)</span></p>
 </section>
 </section>
 </section>
