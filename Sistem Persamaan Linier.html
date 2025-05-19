@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TRANSFORMASI MATRIKS &#8212; Famm,,mmmm,m,,,,rel</title>
+    <title>SISTEM PERSAMAAN LINIER &#8212; My sample book</title>
   
   
   
@@ -62,11 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'TRANSFORMASI MATRIKS';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sistem Persamaan Linier';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Refleksi" href="transformasi.html" />
-    <link rel="prev" title="MATRIKS" href="operasi_aritmatika_matriks.html" />
+    <link rel="next" title="penyelesaian sistem persamaan linier" href="penyelesaian%20sistem%20persamaan%20linier.html" />
+    <link rel="prev" title="slamat datang di mata kuliah komputasi aljabar linier" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -148,8 +148,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Famm,,mmmm,m,,,,rel - Home"/>
-    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Famm,,mmmm,m,,,,rel - Home"/>
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
   
   
 </a></div>
@@ -171,11 +171,11 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="PERSAMAAN%20LINIER.html">SISTEM PERSAMAAN LINIER</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SISTEM PERSAMAAN LINIER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="penyelesaian%20sistem%20persamaan%20linier.html">penyelesaian sistem persamaan linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="operasi_aritmatika_matriks.html"><strong>MATRIKS</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>TRANSFORMASI MATRIKS</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi.html">Refleksi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix.html"><strong>MATRIKS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformasi%20Linier.html"><strong>TRANSFORMASI MATRIKS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="refleksi%20dan%20tugas.html">Refleksi</a></li>
 
 
 
@@ -257,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTRANSFORMASI MATRIKS.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSistem Persamaan Linier.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +287,7 @@
       
       
       
-      <li><a href="_sources/TRANSFORMASI MATRIKS.md" target="_blank"
+      <li><a href="_sources/Sistem Persamaan Linier.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +363,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>TRANSFORMASI MATRIKS</h1>
+    <h1>SISTEM PERSAMAAN LINIER</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,12 +373,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-transformasi-matrix">pengertian transformasi matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notasi-titik-dan-matriks-transformasi">Notasi titik dan matriks transformasi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jrnis-jenis-transformais-matriks">jrnis jenis transformais matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-gabungan">transformasi gabungan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penerapan-trnasformasi-matriks">penerapan trnasformasi matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-soal">tugas soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#devinisi-sistem-persamaan-linier">Devinisi sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi persamaan linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi grafik</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -390,76 +391,63 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="transformasi-matriks">
-<h1><strong>TRANSFORMASI MATRIKS</strong><a class="headerlink" href="#transformasi-matriks" title="Link to this heading">#</a></h1>
-<section id="pengertian-transformasi-matrix">
-<h2>pengertian transformasi matrix<a class="headerlink" href="#pengertian-transformasi-matrix" title="Link to this heading">#</a></h2>
-<p>Transformasi matriks adalah proses matematis untuk mengubah posisi, ukuran, bentuk, atau orientasi suatu objek di bidang (2D) atau ruang (3D) melalui operasi matriks.
-Dalam geometri dan grafika komputer, transformasi ini digunakan untuk:</p>
-<ul class="simple">
-<li><p>Menggeser (translasi)</p></li>
-<li><p>Memutar (rotasi)</p></li>
-<li><p>Memperbesar/memperkecil (skalasi)</p></li>
-<li><p>Mencerminkan (refleksi)</p></li>
-<li><p>Menggeser bentuk (shear)</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
+<h1>SISTEM PERSAMAAN LINIER<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<section id="devinisi-sistem-persamaan-linier">
+<h2>Devinisi sistem persamaan linier<a class="headerlink" href="#devinisi-sistem-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama. Persamaan linier sendiri adalah persamaan yang setiap variabelnya berpangkat satu dan tidak mengandung perkalian antar variabel. Bentuk umum sistem persamaan linier dengan dua variabel adalah:
+<img alt="image" src="https://hackmd.io/_uploads/BJ6NRYgqyl.png" />
+Dimana <em>a,b,c,d,e,f,g</em> adalah konstanta dan <em>x,y</em>  adalah variabel yang harus dicari.</p>
 </section>
-<section id="notasi-titik-dan-matriks-transformasi">
-<h2>Notasi titik dan matriks transformasi<a class="headerlink" href="#notasi-titik-dan-matriks-transformasi" title="Link to this heading">#</a></h2>
-<p>📍 Titik dalam 2D:
-<span class="math notranslate nohighlight">\(P = [ x  y ]^T\)</span>
-📍 Sistem Homogen (untuk translasi &amp; gabungan transformasi)
-<span class="math notranslate nohighlight">\(P = [ x  y  1 ]^T\)</span>
-Transformasi matriks dalam bentuk 3×3: <span class="math notranslate nohighlight">\(T = [ a b c ; d e f ; 0 0 1 ]\)</span></p>
+<section id="solusi-persamaan-linier">
+<h2>Solusi persamaan linier<a class="headerlink" href="#solusi-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Solusi dari sistem persamaan linier adalah nilai variabel yang memenuhi semua persamaan dalam sistem tersebut. Berikut adalah beberapa metode untuk menyelesaikan sistem persamaan linier:</p>
+<section id="eliminasi">
+<h3>Eliminasi<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi digunakan dengan menghilangkan salah satu variabel dengan cara menjumlahkan atau mengurangkan dua persamaan. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Menyamakan koefisien salah satu variabel dalam kedua persamaan.</p></li>
+<li><p>Menjumlahkan atau mengurangkan kedua persamaan untuk mengeliminasi satu variabel.</p></li>
+<li><p>Menyelesaikan persamaan satu variabel yang tersisa.</p></li>
+<li><p>Menggunakan nilai yang diperoleh untuk mencari variabel lainnya.</p></li>
+</ol>
+<p>Contoh:
+<img alt="image" src="https://hackmd.io/_uploads/HJVIg9g9Jl.png" />
+Menjumlahkan kedua persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/SkJqlqgq1e.png" /></p>
 </section>
-<section id="jrnis-jenis-transformais-matriks">
-<h2>jrnis jenis transformais matriks<a class="headerlink" href="#jrnis-jenis-transformais-matriks" title="Link to this heading">#</a></h2>
-<p>1️⃣ Translasi: Menggeser posisi objek.
-Matriks: [1 0 tx; 0 1 ty; 0 0 1]
-2️⃣ Rotasi: Memutar objek terhadap titik asal.
-Matriks: [cosθ -sinθ; sinθ cosθ]
-3️⃣ Skalasi: Mengubah ukuran objek.
-Matriks: [sx 0; 0 sy]
-4️⃣ Refleksi: Mencerminkan objek terhadap sumbu.
-Contoh: Refleksi terhadap sumbu X → [1 0; 0 -1]
-5️⃣ Shear: Menggeser bentuk objek.
-Shear ke arah X: [1 k; 0 1]</p>
+<section id="eliminasi-gauss">
+<h3>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi Gauss adalah teknik yang lebih sistematis untuk menyelesaikan sistem persamaan linier dengan cara mengubahnya menjadi bentuk eselon baris. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Menulis sistem persamaan dalam bentuk matriks augmented.</p></li>
+<li><p>Melakukan operasi baris elementer untuk mendapatkan bentuk eselon baris.</p></li>
+<li><p>Menyelesaikan persamaan dari baris terakhir ke atas dengan metode substitusi balik.</p></li>
+</ol>
+<p>Contoh: Sistem persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/rkkWW9lcyl.png" />
+Dalam bentuk matriks augmented:
+<img alt="image" src="https://hackmd.io/_uploads/HkGz-9ec1x.png" />
+Melakukan operasi baris:
+<img alt="image" src="https://hackmd.io/_uploads/S114-qx5ye.png" />
+Hasil:
+<img alt="image" src="https://hackmd.io/_uploads/rJrr-ce5kx.png" />
+Substitusi balik menghasilkan <span class="math notranslate nohighlight">\(x=2\)</span>,<span class="math notranslate nohighlight">\(y=1\)</span>.</p>
 </section>
-<section id="transformasi-gabungan">
-<h2>transformasi gabungan<a class="headerlink" href="#transformasi-gabungan" title="Link to this heading">#</a></h2>
-<p>Transformasi dapat digabungkan dengan mengalikan matriks-matriks transformasi sesuai urutan operasi.
-Contoh: Translasi + Rotasi:
-Tgabungan = R × T
-Urutan perkalian matriks tidak komutatif: A × B ≠ B × A</p>
+<section id="solusi-grafik">
+<h3>Solusi grafik<a class="headerlink" href="#solusi-grafik" title="Link to this heading">#</a></h3>
+<p>Metode solusi grafik dilakukan dengan menggambar setiap persamaan dalam sistem sebagai garis pada bidang koordinat. Titik potong dari garis-garis tersebut adalah solusi dari sistem persamaan linier. Langkah-langkahnya adalah:</p>
+<ol class="arabic simple">
+<li><p>Mengubah setiap persamaan ke bentuk eksplisit <span class="math notranslate nohighlight">\(y=mx+b\)</span>.</p></li>
+<li><p>Menggambar garis untuk setiap persamaan pada bidang koordinat.</p></li>
+<li><p>Menentukan titik potong antar garis sebagai solusi dari sistem.</p></li>
+</ol>
+<p>Contoh: Sistem persamaan:
+<img alt="image" src="https://hackmd.io/_uploads/r1qJM9l5ye.png" />
+Dengan menggambar kedua garis pada bidang koordinat, titik potongnya adalah <span class="math notranslate nohighlight">\(x=1\)</span>,<span class="math notranslate nohighlight">\(y=3\)</span>,yang merupakan solusi sistem ini.
+Metode grafik lebih cocok digunakan untuk sistem persamaan linier sederhana dengan dua variabel karena keterbatasan visualisasi untuk lebih dari dua variabel.</p>
+<iframe src="https://www.geogebra.org/calculator/skqazxcv?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 </section>
-<section id="penerapan-trnasformasi-matriks">
-<h2>penerapan trnasformasi matriks<a class="headerlink" href="#penerapan-trnasformasi-matriks" title="Link to this heading">#</a></h2>
-<p>🎮 Game Development: Menggerakkan karakter, kamera, atau environment.
-🎨 Desain Grafis: Memutar, membesarkan, dan mencerminkan objek.
-🛰️ Teknik Geodesi: Memetakan posisi titik di permukaan bumi.
-🤖 Robotika: Mengontrol lengan robot dan navigasi.
-📱 Augmented Reality: Menyesuaikan posisi objek virtual dalam dunia nyata.</p>
-</section>
-<section id="tugas-soal">
-<h2>tugas soal<a class="headerlink" href="#tugas-soal" title="Link to this heading">#</a></h2>
-<p><img alt="WhatsApp Image 2025-04-28 at 09.11.13_a967a0a9" src="https://hackmd.io/_uploads/SJflsTXlel.jpg" /></p>
-<p>Misalkan v = (x, y) adalah titik di bidang.
-Jika dinyatakan dalam koordinat polar:
-v = (r cosα, r sinα)
-dengan:
-r = panjang vektor v
-α = sudut antara sumbu-x positif dengan vektor v</p>
-<p>Setelah diputar sebesar θ berlawanan arah jarum jam:
-v’ = (r cos(α+θ), r sin(α+θ))</p>
-<p>Gunakan identitas trigonometri:
-cos(α+θ) = cosα cosθ - sinα sinθ
-sin(α+θ) = sinα cosθ + cosα sinθ</p>
-<p>Sehingga:
-x’ = r cos(α+θ) = r (cosα cosθ - sinα sinθ) = x cosθ - y sinθ
-y’ = r sin(α+θ) = r (sinα cosθ + cosα sinθ) = x sinθ + y cosθ</p>
-<p>Jika ditulis dalam bentuk matriks:
-[x’]   [ cosθ  -sinθ ] [x]
-[y’] = [ sinθ   cosθ ] [y]</p>
 </section>
 </section>
 
@@ -494,20 +482,20 @@ y’ = r sin(α+θ) = r (sinα cosθ + cosα sinθ) = x sinθ + y cosθ</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="operasi_aritmatika_matriks.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>MATRIKS</strong></p>
+        <p class="prev-next-title">slamat datang di mata kuliah komputasi aljabar linier</p>
       </div>
     </a>
     <a class="right-next"
-       href="transformasi.html"
+       href="penyelesaian%20sistem%20persamaan%20linier.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Refleksi</p>
+        <p class="prev-next-title">penyelesaian sistem persamaan linier</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -528,12 +516,13 @@ y’ = r sin(α+θ) = r (sinα cosθ + cosα sinθ) = x sinθ + y cosθ</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-transformasi-matrix">pengertian transformasi matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notasi-titik-dan-matriks-transformasi">Notasi titik dan matriks transformasi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jrnis-jenis-transformais-matriks">jrnis jenis transformais matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-gabungan">transformasi gabungan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penerapan-trnasformasi-matriks">penerapan trnasformasi matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-soal">tugas soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#devinisi-sistem-persamaan-linier">Devinisi sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi persamaan linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-grafik">Solusi grafik</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -548,7 +537,7 @@ y’ = r sin(α+θ) = r (sinα cosθ + cosα sinθ) = x sinθ + y cosθ</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Farel
+By The Jupyter Book Community
 </p>
 
   </div>

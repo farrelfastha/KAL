@@ -1,5 +1,5 @@
 ---
-title: PERSAMAAN LINIER
+title: SISTEM PERSAMAAN LINIER
 
 ---
 
