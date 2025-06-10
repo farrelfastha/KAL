@@ -183,6 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="eigenvalues%20dan%20eligenvectors.html">eigenvalues dan eigenvector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Perkalian%20titik%20%28Dot%20product%29%20dan%20Vektor%20satuan.html">Perkalian titik (Dot product) dan Vektor satuan</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Perkalian Silang (Cross Product)</strong></a></li>
+
 </ul>
 
     </div>
@@ -375,8 +376,23 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Perkalian Silang (Cross Product)</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-perhitungan-kali-silang">contoh perhitungan kali silang</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-soal">Tugas Soal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -441,6 +457,114 @@ B_x &amp; B_y &amp; B_z \\
 \)</span></p>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-soal">
+<h1>Tugas Soal<a class="headerlink" href="#tugas-soal" title="Link to this heading">#</a></h1>
+<section id="soal">
+<h2>soal<a class="headerlink" href="#soal" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>tentukan luas jajar genjang yang ditentukan oleh vektor $<span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad \vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}\)</span>$</p></li>
+<li><p>tentukan luas jajar genjang yang ditentukan oleh vektor u
+$<span class="math notranslate nohighlight">\(
+\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}
+\)</span>$</p></li>
+<li><p>tentukan luas segitiga dengan titik sudut (0,0,0), (1,3,-1), dan (2,1,1)</p></li>
+<li><p>tentukan luas segitiga dengan titik sudut (5,2,-1), (3,6,2), dan (1,0,4)</p></li>
+</ol>
+</section>
+<section id="jawaban">
+<h2>jawaban<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>1.<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L = \left| \det \begin{pmatrix} 1 &amp; 2 \\ 2 &amp; 1 \end{pmatrix} \right| 
+= |(1)(1) - (2)(2)| = |1 - 4| = \boxed{3}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h3>2.<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+L = \left| \det \begin{pmatrix} 2 &amp; 0 \\ 0 &amp; 3 \end{pmatrix} \right| 
+= |(2)(3) - (0)(0)| = |6| = \boxed{6}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h3>3.<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Vektor:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} = (1, 3, -1), \quad \vec{AC} = (2, 1, 1)
+\)</span>$</p>
+<p>Cross product:
+$$
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \
+1 &amp; 3 &amp; -1 \
+2 &amp; 1 &amp; 1
+\end{vmatrix}
+= (3 \cdot 1 - (-1) \cdot 1)\mathbf{i}</p>
+<ul class="simple">
+<li><p>(1 \cdot 1 - (-1) \cdot 2)\mathbf{j}</p></li>
+</ul>
+<ul class="simple">
+<li><p>(1 \cdot 1 - 3 \cdot 2)\mathbf{k}
+$<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+= (3 + 1)\mathbf{i} - (1 + 2)\mathbf{j} + (1 - 6)\mathbf{k} 
+= 4\mathbf{i} - 3\mathbf{j} - 5\mathbf{k}
+\)</span>$</p></li>
+</ul>
+<p>Magnitude:
+$<span class="math notranslate nohighlight">\(
+|\vec{AB} \times \vec{AC}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{16 + 9 + 25} = \sqrt{50}
+\)</span>$</p>
+<p>Luas segitiga:
+$<span class="math notranslate nohighlight">\(
+\text{Luas} = \frac{1}{2} \cdot \sqrt{50} = \boxed{\frac{\sqrt{50}}{2}}
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h3>4.<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Vektor:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} = (-2, 4, 3), \quad \vec{AC} = (-4, -2, 5)
+\)</span>$</p>
+<p>Cross product:
+$$
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \
+-2 &amp; 4 &amp; 3 \
+-4 &amp; -2 &amp; 5
+\end{vmatrix}
+= (4 \cdot 5 - 3 \cdot (-2))\mathbf{i}</p>
+<ul class="simple">
+<li><p>(-2 \cdot 5 - 3 \cdot (-4))\mathbf{j}</p></li>
+</ul>
+<ul class="simple">
+<li><p>(-2 \cdot (-2) - 4 \cdot (-4))\mathbf{k}
+$<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+= (20 + 6)\mathbf{i} - (-10 + 12)\mathbf{j} + (4 + 16)\mathbf{k} 
+= 26\mathbf{i} - 2\mathbf{j} + 20\mathbf{k}
+\)</span>$</p></li>
+</ul>
+<p>Magnitude:
+$<span class="math notranslate nohighlight">\(
+|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{676 + 4 + 400} = \sqrt{1080}
+\)</span>$</p>
+<p>Luas segitiga:
+$<span class="math notranslate nohighlight">\(
+\text{Luas} = \frac{1}{2} \cdot \sqrt{1080} = \boxed{\frac{\sqrt{1080}}{2}}
+\)</span>$</p>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -498,8 +622,23 @@ B_x &amp; B_y &amp; B_z \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Perkalian Silang (Cross Product)</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-perhitungan-kali-silang">contoh perhitungan kali silang</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-soal">Tugas Soal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
